@@ -10,7 +10,9 @@ Study-English/
 │   ├── Day100_001.jpg ~ Day100_100.jpg   # 메인 회화 이미지 100장 (하루 1장)
 │   └── pic/                              # 추가 그림 (100 1 ~ 100 5, 각 20장)
 ├── notes/                               # 하루치 학습 노트 (Day001.md ~ Day100.md)
+├── INDEX.md                             # 표현 색인 사전 (알파벳순 421개 표현 → Day 링크)
 ├── STUDY_GUIDE.md                       # AI로 노트 200% 활용하는 학습법 & 프롬프트
+├── scripts/build-index.ps1              # 노트에서 INDEX.md를 자동 생성하는 스크립트
 └── README.md                            # 이 파일 — 100일 진도 체크리스트
 ```
 
@@ -19,7 +21,10 @@ Study-English/
 1. 하루에 `Day100_NNN.jpg` 한 장씩 공부한다.
 2. 끝내면 아래 체크리스트에 `[x]` 표시한다.
 3. 그날 배운 표현은 `notes/DayNNN.md`에 정리되어 있다.
-4. 더 효과적으로 익히려면 [`STUDY_GUIDE.md`](STUDY_GUIDE.md)의 AI 활용 프롬프트(롤플레이·한→영 드릴·간격복습 등)를 활용한다.
+4. 특정 표현을 다시 찾고 싶을 땐 [`INDEX.md`](INDEX.md) 표현 색인 사전에서 알파벳순으로 검색한다.
+5. 더 효과적으로 익히려면 [`STUDY_GUIDE.md`](STUDY_GUIDE.md)의 AI 활용 프롬프트(롤플레이·한→영 드릴·간격복습 등)를 활용한다.
+
+> 노트를 수정한 뒤에는 `pwsh scripts/build-index.ps1`(또는 `powershell -File scripts/build-index.ps1`)을 실행해 색인을 다시 생성한다.
 
 ## 100일 진도 체크리스트
 
